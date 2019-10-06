@@ -6,9 +6,10 @@ body {
 
 .Loop {
   position: relative;
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  height: 600px;
+  width: 420px;
+  margin: auto;
+  overflow-y: scroll;
 }
 
 section {
@@ -24,7 +25,7 @@ section {
 }
 
 body {
-  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 100%;
 }
