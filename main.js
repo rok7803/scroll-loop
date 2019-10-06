@@ -40,7 +40,7 @@ function scrollUpdate () {
   if (!disableScroll) {
     scrollPos = getScrollPos();
 
-    if (/*clonesHeight + */scrollPos >= scrollHeight) {
+    if (/*clonesHeight + scrollPos >= scrollHeight*/scrollHeight - context.clientHeight === context.scrollTop) {
       // Scroll to the top when you’ve reached the bottom
       setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
       disableScroll = true;
