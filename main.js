@@ -36,7 +36,7 @@ function reCalc () {
 }
 
 function scrollUpdate () {
-  console.log(scrollPos + ' : ' + scrollHeight);
+  console.log(scrollPos + ' : ' + scrollHeight + ' : ' + context.scrollTop);
   if (!disableScroll) {
     scrollPos = getScrollPos();
 
