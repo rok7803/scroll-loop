@@ -15,7 +15,7 @@ function setScrollPos (pos) {
   context.scrollTop = pos;
 }
 
-function getClonesHeight () {
+/*function getClonesHeight () {
   clonesHeight = 0;
 
   for (i = 0; i < clones.length; i += 1) {
@@ -23,12 +23,12 @@ function getClonesHeight () {
   }
 
   return clonesHeight;
-}
+}*/
 
 function reCalc () {
   scrollPos = getScrollPos();
   scrollHeight = context.scrollHeight;
-  clonesHeight = getClonesHeight();
+  //clonesHeight = getClonesHeight();
 
   if (scrollPos <= 0) {
     setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
@@ -39,13 +39,13 @@ function scrollUpdate () {
   if (!disableScroll) {
     scrollPos = getScrollPos();
 
-    if (clonesHeight + scrollPos >= scrollHeight) {
+    if (/*clonesHeight + */scrollPos >= scrollHeight) {
       // Scroll to the top when you’ve reached the bottom
       setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
       disableScroll = true;
     } else if (scrollPos <= 0) {
       // Scroll to the bottom when you reach the top
-      setScrollPos(scrollHeight - clonesHeight);
+      setScrollPos(scrollHeight/* - clonesHeight*/);
       disableScroll = true;
     }
   }
@@ -77,6 +77,6 @@ if (document.readyState !== 'loading') {
 }
 
 // Just for this demo: Center the middle block on page load
-window.onload = function () {
+/*window.onload = function () {
   setScrollPos(Math.round(clones[0].getBoundingClientRect().top + getScrollPos() - (context.offsetHeight - clones[0].offsetHeight) / 2));
-};
+};*/
