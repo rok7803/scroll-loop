@@ -15,7 +15,7 @@ function setScrollPos (pos) {
   context.scrollTop = pos;
 }
 
-/*function getClonesHeight () {
+function getClonesHeight () {
   clonesHeight = 0;
 
   for (i = 0; i < clones.length; i += 1) {
@@ -23,12 +23,12 @@ function setScrollPos (pos) {
   }
 
   return clonesHeight;
-}*/
+}
 
 function reCalc () {
   scrollPos = getScrollPos();
   scrollHeight = context.scrollHeight;
-  //clonesHeight = getClonesHeight();
+  clonesHeight = getClonesHeight();
 
   if (scrollPos <= 0) {
     setScrollPos(1); // Scroll 1 pixel to allow upwards scrolling
@@ -40,7 +40,7 @@ function scrollUpdate () {
   if (!disableScroll) {
     scrollPos = getScrollPos();
 
-    if (/*clonesHeight + scrollPos >= scrollHeight*/scrollHeight - context.clientHeight === context.scrollTop) {
+    if (clonesHeight + scrollPos >= scrollHeight/*scrollHeight - context.clientHeight === context.scrollTop*/) {
       // Scroll to the top when you’ve reached the bottom
       setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
       disableScroll = true;
