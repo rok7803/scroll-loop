@@ -1,11 +1,12 @@
 var doc = window.document,
-  context = doc.querySelector('.js-loop');
+  context = doc.querySelector('.js-loop'),
+  count = 0;
 
 function eightSections(n){
     context.scrollTop = count;
     count += 500;
-    n++
-    if(n<8) setTimeout(eightSections, 3000, n);
+    n++;
+    if(n<8) setTimeout(eightSections, 1500, n);
     else{
         n=0;
         context.scrollTop = 0;
