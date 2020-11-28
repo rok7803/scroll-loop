@@ -12,7 +12,7 @@ body {
   height: 600px;
   width: 420px;
   margin: auto;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 section {
