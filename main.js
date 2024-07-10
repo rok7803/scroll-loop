@@ -9,7 +9,7 @@ function eightSections(){
     count += 500;
     n++;
     if(n<8){
-        myTimeout = setTimeout(eightSections, 800, n);
+        myTimeout = setTimeout(eightSections, 1000, n);
     }
     else{
         n=0;
