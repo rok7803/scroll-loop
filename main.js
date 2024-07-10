@@ -29,7 +29,16 @@ function init () {
 }
 
 context.onmouseenter = function() {stopTimeout()};
+
+// On touch devices
+context.ontouchstart = function()
+{stopTimeout()};
+
 context.onmouseleave = function() {eightSections()};
+
+// On touch devices
+context.ontouchend = function()
+{eightSections()};
 
 if (document.readyState !== 'loading') {
   init()
