@@ -7,18 +7,19 @@ body {
   overflow: hidden;
 }
 
-.Loop {
+/*.Loop {
   position: relative;
   height: 600px;
   width: 420px;
   margin: auto;
   overflow-y: hidden;
-}
+}*/
 
 section {
   position: relative;
   text-align: center;
   height: 500px;
+  width: 420px;
 }
 
 .Loop::-webkit-scrollbar {
