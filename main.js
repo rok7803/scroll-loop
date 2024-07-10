@@ -38,7 +38,7 @@ context.onmouseleave = function() {eightSections()};
 
 // On touch devices
 context.ontouchend = function()
-{init()};
+{eightSections()};
 
 if (document.readyState !== 'loading') {
   init()
