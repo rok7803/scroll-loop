@@ -37,7 +37,7 @@ context.ontouchstart = function()
 context.onmouseleave = function() {eightSections()};
 
 // On touch devices
-context.ontouchend = function()
+context.ontouchmove = function()
 {eightSections()};
 
 if (document.readyState !== 'loading') {
