@@ -1,5 +1,6 @@
 var doc = window.document,
   context = doc.querySelector('.js-loop'),
+    clones = context.querySelectorAll('.is-clone'),
   count = 0,
   n = 0,
   myTimeout;
