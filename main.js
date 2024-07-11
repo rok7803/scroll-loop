@@ -6,13 +6,15 @@ var doc = window.document,
   myTimeout;
 
 function eightSections(){
-    context.scrollTop = count;
-    count += 500;
+    //context.scrollTop = count;
+    //count += 500;
     n++;
     if(n<7){
+        context.scrollTop = count;
+        count += 500;
         myTimeout = setTimeout(eightSections, 1000, n);
     } else if(n===7){
-
+        context.scrollTop = -200;
     }
     else{
         n=0;
