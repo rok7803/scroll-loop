@@ -15,6 +15,7 @@ function eightSections(){
         myTimeout = setTimeout(eightSections, 1000, n);
     } else if(n===7){
         context.scrollTop = -200;
+        myTimeout = setTimeout(eightSections, 1000, n);
     }
     else{
         n=0;
