@@ -8,7 +8,7 @@ function eightSections(){
     context.scrollTop = count;
     count += 500;
     n++;
-    if(n<8){
+    if(n<9){
         myTimeout = setTimeout(eightSections, 1000, n);
     }
     else{
