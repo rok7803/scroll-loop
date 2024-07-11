@@ -26,6 +26,7 @@ section {
 .last {
   position: relative;
   top: 500px;
+  height: 100px;
   width: 420px;
   background-color: red;
 }
