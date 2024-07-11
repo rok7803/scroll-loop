@@ -7,7 +7,7 @@ var doc = window.document,
 
 function eightSections(){
     n++;
-    context.scrollTop = n===7?800:count;
+    context.scrollTop = count;
     count += 500;
     //n++;
     if(n<7){
