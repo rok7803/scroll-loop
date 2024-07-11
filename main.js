@@ -11,6 +11,8 @@ function eightSections(){
     n++;
     if(n<7){
         myTimeout = setTimeout(eightSections, 1000, n);
+    } else if(n===7){
+
     }
     else{
         n=0;
