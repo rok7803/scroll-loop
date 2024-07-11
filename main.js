@@ -19,7 +19,7 @@ function eightSections(){
     }
     else{
         n=0;
-        context.scrollTop = 0;
+        //context.scrollTop = 0;
         count = 0;
         eightSections();
     }
